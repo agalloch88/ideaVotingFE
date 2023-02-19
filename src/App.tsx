@@ -2,12 +2,12 @@ import "./App.css";
 import { Amplify } from "aws-amplify";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
-import amplifyConfig from "./aws-exports";
+import awsConfig from "./aws-exports";
 import AppRoutes from "./Routes";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-Amplify.configure(amplifyConfig);
+Amplify.configure(awsConfig);
 
 function App() {
   return (
