@@ -1,3 +1,11 @@
+export interface Idea {
+    date: number;
+    description?: string;
+    id: string;
+    ideaTitle: string;
+    votes: number;
+  }
+
 export interface BoardData extends BoardListData {
     ideas: Idea[];
   }
